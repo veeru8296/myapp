@@ -1,0 +1,184 @@
+/* app/todos/[id]/page.module.css */
+
+/* ── Container ──────────────────────────────────────────────────── */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+  color: #e2e8f0;
+  padding: 3rem 2rem;
+  font-family: var(--font-geist-sans), sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Back link at the top ───────────────────────────────────────── */
+.backLink {
+  align-self: flex-start;
+  margin-bottom: 2rem;
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.875rem;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 0.5rem;
+  transition: color 0.2s, border-color 0.2s;
+  max-width: 760px;
+  /* width: 100%; */
+}
+
+.backLink:hover {
+  color: #a5b4fc;
+  border-color: rgba(99,102,241,0.4);
+}
+
+/* ── Detail Card ────────────────────────────────────────────────── */
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 760px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+}
+
+/* ── Card Header: Title + Priority ─────────────────────────────── */
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #f1f5f9;
+  margin: 0;
+  line-height: 1.25;
+  flex: 1;
+}
+
+/* ── Priority Badge ─────────────────────────────────────────────── */
+.priorityBadge {
+  display: inline-block;
+  padding: 0.25rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.priorityHigh   { background: rgba(239,68,68,0.15);  color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
+.priorityMedium { background: rgba(251,191,36,0.15); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+.priorityLow    { background: rgba(52,211,153,0.15); color: #34d399; border: 1px solid rgba(52,211,153,0.3); }
+
+/* ── Divider ────────────────────────────────────────────────────── */
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  margin: 0 0 1.75rem;
+}
+
+/* ── Detail Fields (<dl>) ───────────────────────────────────────── */
+.details {
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.detailRow {
+  display: grid;
+  grid-template-columns: 140px 1fr; /* fixed label width, value takes rest */
+  gap: 0.75rem;
+  align-items: baseline;
+}
+
+.detailLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #475569;
+  margin: 0;
+}
+
+.detailValue {
+  font-size: 0.975rem;
+  color: #cbd5e1;
+  margin: 0;
+  line-height: 1.65;
+}
+
+/* ── Status Pill ────────────────────────────────────────────────── */
+.statusPill {
+  display: inline-block;
+  padding: 0.25rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.statusCompleted  { background: rgba(52,211,153,0.15); color: #34d399; border: 1px solid rgba(52,211,153,0.3); }
+.statusInProgress { background: rgba(99,102,241,0.15); color: #818cf8; border: 1px solid rgba(99,102,241,0.3); }
+.statusPending    { background: rgba(251,191,36,0.15); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+
+/* ── Action Buttons ─────────────────────────────────────────────── */
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.35rem;
+  border-radius: 0.6rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: opacity 0.2s, transform 0.15s;
+  font-family: inherit;
+}
+
+.btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.btnEdit   { background: rgba(251,191,36,0.15); color: #fbbf24; border-color: rgba(251,191,36,0.3); }
+.btnDelete { background: rgba(239,68,68,0.15);  color: #f87171; border-color: rgba(239,68,68,0.3); }
+.btnBack   { background: rgba(255,255,255,0.05); color: #94a3b8; border-color: rgba(255,255,255,0.1); }
+
+/* ── Responsive ─────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .container { padding: 1.5rem 1rem; }
+
+  .card { padding: 1.5rem 1.25rem; }
+
+  .detailRow {
+    grid-template-columns: 1fr;  /* Stack label above value on mobile */
+    gap: 0.25rem;
+  }
+
+  .cardHeader { flex-direction: column; }
+
+  .actions { flex-direction: column; }
+
+  .btn { justify-content: center; }
+}

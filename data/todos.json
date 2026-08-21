@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Learn Next.js App Router",
+    "description": "Understand file-system routing, Server Components, layouts, loading.js, and error.js in the new App Router.\nAnd also learn the use of \"use client\" directive.",
+    "priority": "high",
+    "dueDate": "2026-08-20",
+    "status": "completed"
+  },
+  {
+    "id": 2,
+    "title": "Build a Todo App",
+    "description": "Create a full-featured todo management application demonstrating CRUD operations with Next.js.",
+    "priority": "high",
+    "dueDate": "2026-08-25",
+    "status": "pending"
+  },
+  {
+    "id": 3,
+    "title": "Understand Server Components",
+    "description": "Deep dive into React Server Components — when to use them, their limitations, and how they differ from Client Components.",
+    "priority": "medium",
+    "dueDate": "2026-08-22",
+    "status": "completed"
+  },
+  {
+    "id": 4,
+    "title": "Style with CSS Modules",
+    "description": "Apply scoped, component-level styles using CSS Modules to avoid global style conflicts across pages.",
+    "priority": "low",
+    "dueDate": "2026-08-30",
+    "status": "pending"
+  },
+  {
+    "id": 5,
+    "title": "Deploy to Vercel",
+    "description": "Connect the GitHub repository to Vercel and deploy the application to a live production URL.",
+    "priority": "medium",
+    "dueDate": "2026-09-01",
+    "status": "pending"
+  },
+  {
+    "id": 6,
+    "title": "Write API Route Handlers",
+    "description": "Implement REST-style Route Handlers in the App Router using app/api/ to handle POST, PUT, DELETE requests.",
+    "priority": "high",
+    "dueDate": "2026-08-28",
+    "status": "pending"
+  },
+  {
+    "id": 7,
+    "title": "Test todo",
+    "description": "This is the test Todo",
+    "priority": "Low",
+    "dueDate": "2026-08-23",
+    "status": "Pending"
+  },
+  {
+    "id": 8,
+    "title": "Maths Todo",
+    "description": "Todo maths problems",
+    "priority": "High",
+    "dueDate": "2026-08-26",
+    "status": "Pending"
+  },
+  {
+    "id": 9,
+    "title": "Learn Java",
+    "description": "Learning Java from basics to advance level",
+    "priority": "Medium",
+    "dueDate": "2026-08-27",
+    "status": "Pending"
+  }
+]
