@@ -2,6 +2,8 @@ import Link from "next/link"
 import styles from "./page.module.css"
 import { getTodoStats } from "@/lib/todos"
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "Todo Management App",
   description: "Manage your todos",

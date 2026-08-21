@@ -4,6 +4,8 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import DeleteButton from "@/components/todos/DeleteButton";
 
+export const dynamic = "force-dynamic";
+
 
 export async function generateMetadata({params}){
     const {id} = await params;

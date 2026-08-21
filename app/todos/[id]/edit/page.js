@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import EditTodoForm from "@/components/todos/EditTodoForm";
 import styles from "../../todo-form.module.css";
 
+export const dynamic = "force-dynamic";
+
 
 export async function generateMetadata({params}){
     const {id} = await params;
